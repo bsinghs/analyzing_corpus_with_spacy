@@ -24,6 +24,3 @@ Extend your script so that it loads the document into spaCy and then determines 
 Step 3
 
 Put your code in a GitHub Gist and submit the URL.
-
-Answer"
-Installed spacy using https://spacy.io/usage (mac installation)
