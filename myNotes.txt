@@ -1,13 +1,3 @@
-https://docs.python.org/2/library/collections.html#collections.Counter
-
-https://www.geeksforgeeks.org/python-program-for-most-frequent-word-in-strings-list/
-
-
-piip install pandas\\
-
-
-
-
 (.venv) (base) Bhajanpreets-MacBook-Pro:analyzing_corpus_with_spacy bhajanpreetsingh$ python -m spacy download en_core_web_sm
 /Users/bhajanpreetsingh/dev/analyzing_corpus_with_spacy/.venv/bin/python: No module named spacy
 (.venv) (base) Bhajanpreets-MacBook-Pro:analyzing_corpus_with_spacy bhajanpreetsingh$ pip install -U pip setuptools wheel
