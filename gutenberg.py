@@ -14,10 +14,7 @@ def getsimilarity(big_sentence, big_sentences):
     s1 = str(big_sentence)
     for sentence in big_sentences:
         s2 = str(sentence)
-        print(s1)
-        print(s2)
         sim = big_sentence.similarity(sentence)
-        print(sim)
         if int(sim) < 1:
             simi_dict[s1+" <-> "+s2] = float(sim)
 
