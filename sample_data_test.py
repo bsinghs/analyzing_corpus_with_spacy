@@ -1,4 +1,4 @@
-"""This is a test program with sample data"""
+"""This is a test program with sample data. Test results can be seen in the end of this code"""
 
 import spacy
 
