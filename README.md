@@ -26,7 +26,4 @@ Step 3
 Put your code in a GitHub Gist and submit the URL.
 
 Answer"
-Installed spacy using https://spacy.io/usage (windows installation)
-pip install -U pip setuptools wheel
-pip install -U spacy
-python -m spacy download en_core_web_lg
+Installed spacy using https://spacy.io/usage (mac installation)
