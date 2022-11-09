@@ -15,7 +15,7 @@ def getsimilarity(big_sentence, big_sentences):
     for sentence in big_sentences:
         s2 = str(sentence)
         sim = big_sentence.similarity(sentence)
-        if int(sim) < 1:
+        if int(sim) < 0.99:
             simi_dict[s1+" <-> "+s2] = float(sim)
 
 
@@ -97,3 +97,36 @@ print("first_word_in_15th_sentence is: ")
 print(str(first_word_in_15th_sentence))
 print("Vector for first_word_in_15th_sentence:")
 print(first_word_in_15th_sentence.vector_norm)
+
+"""
+(.venv) (base) BhajanpreetsMBP:analyzing_corpus_with_spacy bhajanpreetsingh$ /Users/bhajanpreetsingh/dev/analyzing_corpus_with_spacy/.venv/bin/python /Users/bhajanpreetsingh/dev/analyzing_corpus_with_spacy/gutenberg.py
+https://www.gutenberg.org//ebooks/2641.txt.utf-8
+Token count: 95392
+Verb count: 10588
+Sentence count: 5751
+
+Most similar sentence: 
+You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online at
+www.gutenberg.org. <-> You may copy it, give it away or re-use it
+  under the terms of the Project Gutenberg License included with this
+  eBook or online at www.gutenberg.org.
+Similarity: 0.9999999403953552
+2nd Most similar sentence: 
+If you are not located in the United States, you
+will have to check the laws of the country where you are located before
+using this eBook.
+
+ <-> If you are not located in the
+  United States, you will have to check the laws of the country where
+  you are located before using this eBook.
+
+1.E.2.
+Similarity: 0.9989147186279297
+Most frequent named entity: 
+Lucy
+first_word_in_15th_sentence is: 
+Fourth
+Vector for first_word_in_15th_sentence:
+37.999928
+"""
