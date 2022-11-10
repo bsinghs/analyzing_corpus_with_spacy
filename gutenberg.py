@@ -15,7 +15,7 @@ def getsimilarity(big_sentence, big_sentences):
     for sentence in big_sentences:
         s2 = str(sentence)
         sim = big_sentence.similarity(sentence)
-        if int(sim) < 0.99:
+        if float(sim) < 0.99:
             simi_dict[s1+" <-> "+s2] = float(sim)
 
 
@@ -105,24 +105,23 @@ Token count: 95392
 Verb count: 10588
 Sentence count: 5751
 
+
 Most similar sentence: 
-You may copy it, give it away or re-use it under the terms
-of the Project Gutenberg License included with this eBook or online at
-www.gutenberg.org. <-> You may copy it, give it away or re-use it
-  under the terms of the Project Gutenberg License included with this
-  eBook or online at www.gutenberg.org.
-Similarity: 0.9999999403953552
+“Freddy I do call the way you talk unkind.” <-> “Lucy, I do call the way you talk unkind.”
+Similarity: 0.9871618151664734
 2nd Most similar sentence: 
-If you are not located in the United States, you
-will have to check the laws of the country where you are located before
-using this eBook.
+If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg-tm work. <-> Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
 
- <-> If you are not located in the
-  United States, you will have to check the laws of the country where
-  you are located before using this eBook.
 
-1.E.2.
-Similarity: 0.9989147186279297
+Similarity: 0.9808576107025146
 Most frequent named entity: 
 Lucy
 first_word_in_15th_sentence is: 
