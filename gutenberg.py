@@ -15,7 +15,7 @@ def getsimilarity(big_sentence, big_sentences):
     for sentence in big_sentences:
         s2 = str(sentence)
         sim = big_sentence.similarity(sentence)
-        if float(sim) < 0.99:
+        if float(sim) < 0.98:
             simi_dict[s1+" <-> "+s2] = float(sim)
 
 
@@ -107,21 +107,18 @@ Sentence count: 5751
 
 
 Most similar sentence: 
-“Freddy I do call the way you talk unkind.” <-> “Lucy, I do call the way you talk unkind.”
-Similarity: 0.9871618151664734
+Surely it was better not to speak until I felt
+certain.” <-> I
+was not meant to understand it.”
+
+
+Similarity: 0.9796569347381592
 2nd Most similar sentence: 
-If you are outside the United States,
-check the laws of your country in addition to the terms of this
-agreement before downloading, copying, displaying, performing,
-distributing or creating derivative works based on this work or any
-other Project Gutenberg-tm work. <-> Do not copy, display, perform, distribute or redistribute this
-electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
-active links or immediate access to the full terms of the Project
-Gutenberg-tm License.
-
-
-Similarity: 0.9808576107025146
+“I said: ‘Dear Mrs. Vyse, Cecil has just asked my permission about it,
+and I should be delighted, if Lucy wishes it. <-> “Then the whole thing runs: ‘Dear Mrs. Vyse.—Cecil has just asked my
+permission about it, and I should be delighted if Lucy wishes it, and I
+have told Lucy so.
+Similarity: 0.9793974757194519
 Most frequent named entity: 
 Lucy
 first_word_in_15th_sentence is: 
